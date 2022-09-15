@@ -1,6 +1,10 @@
 class Solution {
 public:
     int romanToInt(string s) {
+        //Logic is Roman numerals are usually written largest to smallest from left to right.
+        // We will traverse from back to front if(i < i+1) we will perform subtraction
+        //else we just add them
+        //TC : O(N) , SC : O(1) ..if we not consider map else it is O(N)
         unordered_map<char,int>mp = {
             {'I',1},
             {'V',5},
