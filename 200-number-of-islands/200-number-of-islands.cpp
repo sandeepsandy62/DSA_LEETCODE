@@ -1,4 +1,18 @@
 class Solution {
+    
+    /*
+    
+    Here we are applying dfs . so , that in one single go it will reach available land in the component
+    it is nothing but  variation to counting number of components
+    
+    TC : O(N*M)+O(V+E) , SC : O(N*M)
+    
+    
+      
+    
+    
+    */
+    
     private:
     void dfs(int row , int col , vector<vector<char>>&grid , vector<vector<int>>&vis){
         int n = grid.size();
@@ -12,6 +26,7 @@ class Solution {
                 dfs(row+delrow[i],col+delcol[i],grid,vis);
         }
     }
+    
 public:
     int numIslands(vector<vector<char>>& grid) {
         int n = grid.size();
