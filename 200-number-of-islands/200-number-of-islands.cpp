@@ -5,7 +5,7 @@ class Solution {
     Here we are applying dfs . so , that in one single go it will reach available land in the component
     it is nothing but  variation to counting number of components
     
-    TC : O(N*M)+O(V+E) , SC : O(N*M)
+    TC : O(N*M), SC : O(N*M)
     
     
       
