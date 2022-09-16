@@ -7,9 +7,12 @@ class Solution {
     
     TC : O(N*M), SC : O(N*M)
     
+    we can do it in O(1) space complexity if we not consider grid matrix
     
+    if the grid is land then make it water everytime . so that there is no need to check visited array
+    we can just refer our grid array . if it is one we consider , if not we will not consider it 
       
-    
+    But we should not tamper the given original data .
     
     */
     
