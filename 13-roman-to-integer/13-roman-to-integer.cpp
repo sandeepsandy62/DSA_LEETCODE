@@ -14,11 +14,12 @@ public:
             {'D',500},
             {'M',1000}
         };
-        int num = mp[s.back()] ;
+        
+        int num = mp[s.back()];
         int len = s.length();
-        for(int i=len-2;i>=0;i--){
-           if(mp[s[i]] < mp[s[i+1]]) num-=(mp[s[i]]);
-           else num+=(mp[s[i]]);
+        for(int i = len-2 ; i >= 0 ; i--){
+            if(mp[s[i]] < mp[s[i+1]]) num-=(mp[s[i]]) ;
+            else num+=mp[s[i]];
         }
         return num;
     }
