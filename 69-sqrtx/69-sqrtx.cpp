@@ -15,7 +15,7 @@ public:
         
         
         //Now actualy what we are doing we are checking from 1 , 2 ,3 ,.....,sqrt(x)
-        //instead of doing linear search we use binary search so that time complexity will be O(logy)
+        //instead of doing linear search we use binary search so that time complexity will be    O(log(sqrt(x)))
         //as we know ans will be in range when y*y <= x , so we store ans in mid*mid <= x condition
         //Given constraints 0 <= x <= 2^31 - 1
         //that is the reason we are storing low = 0 , high - INT_MAX
