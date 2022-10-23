@@ -11,6 +11,7 @@ public:
             
             char current = s[end];
             
+            //seen[current] >= begin means it is in the current window 
             if(seen.count(current) == 1 && seen[current] >= begin){
                 begin = seen[current] + 1 ;
             }else{
