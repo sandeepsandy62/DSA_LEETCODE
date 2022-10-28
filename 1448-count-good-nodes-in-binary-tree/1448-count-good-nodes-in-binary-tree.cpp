@@ -25,6 +25,7 @@ public:
     
     int goodNodes(TreeNode* root) {
         int count = 0 ;
+        if(root!=NULL)
         dfs(root , root->val,count);
         return count;
     }
